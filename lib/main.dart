@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -9,8 +7,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
+      theme: ThemeData.Light(),
+
        debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
+
       home: Scaffold(appBar: AppBar(title: Text('hello'),
       actions: <Widget>[Icon(Icons.accessibility)
       ],
@@ -32,7 +34,7 @@ class MyAppBody extends StatelessWidget {
     return Center(
       child: Container(
         // ignore: deprecated_member_use
-        child: RaisedButton(onPressed: () { print('hii');
+        child: RaisedButton(onPressed: () { print('hello');
         },
          child: Text('Click ME'),),
         
